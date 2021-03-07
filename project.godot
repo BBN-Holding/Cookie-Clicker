@@ -24,6 +24,10 @@ config/name="Cookie-Clicker"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/stdout/print_fps=true
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
