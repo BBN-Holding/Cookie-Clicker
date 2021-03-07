@@ -1,31 +1,53 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://Cookie.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Roboto/Roboto-Bold.ttf" type="DynamicFontData" id=3]
 
-[sub_resource type="ImageTexture" id=1]
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-margin_left = 69.0
+margin_left = 70.0
 margin_top = 183.0
-margin_right = 954.0
-margin_bottom = 504.0
+margin_right = 320.0
+margin_bottom = 432.0
+action_mode = 0
 text = "Joo"
-icon = SubResource( 1 )
+flat = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Cookie" type="Sprite" parent="Button"]
+position = Vector2( 124.666, 124.342 )
+scale = Vector2( 0.135676, 0.135676 )
+texture = ExtResource( 2 )
+
 [node name="Label" type="Label" parent="."]
-margin_left = 166.507
-margin_top = 83.8792
-margin_right = 853.507
-margin_bottom = 140.879
-text = "KEINE COOKIES"
+margin_left = 47.0
+margin_top = 100.0
+margin_right = 320.0
+margin_bottom = 114.0
+rect_pivot_offset = Vector2( 91.5086, 14 )
+custom_fonts/font = SubResource( 1 )
+text = "0 cookies"
 align = 1
-valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 47.0
+margin_top = 122.302
+margin_right = 319.0
+margin_bottom = 136.302
+rect_pivot_offset = Vector2( 91.5086, 14 )
+text = "per secound: 0"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

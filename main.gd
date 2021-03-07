@@ -19,6 +19,5 @@ func onClick():
 var counter = 0
 func _on_Button_button_down():
 	counter = counter + 1
-	get_node("../Label").set_text(String(counter))
-	print("Hello World!")
+	get_node("../Label").set_text(String(counter) + " cookies")
 	pass # Replace with function body.
