@@ -16,7 +16,9 @@ func onClick():
 #func _process(delta):
 #	pass
 
-
+var counter = 0
 func _on_Button_button_down():
+	counter = counter + 1
+	print(get_node("../Label").set_text(String(counter)))
 	print("Hello World!")
 	pass # Replace with function body.

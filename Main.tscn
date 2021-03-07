@@ -1,16 +1,31 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
+
+[sub_resource type="ImageTexture" id=1]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-margin_left = 169.0
-margin_top = 113.0
-margin_right = 460.0
-margin_bottom = 286.0
+margin_left = 69.0
+margin_top = 183.0
+margin_right = 954.0
+margin_bottom = 504.0
 text = "Joo"
+icon = SubResource( 1 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 166.507
+margin_top = 83.8792
+margin_right = 853.507
+margin_bottom = 140.879
+text = "KEINE COOKIES"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
